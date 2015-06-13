@@ -1,0 +1,65 @@
+.square {
+	margin: 0;
+	padding: 0;
+	background-color: #555;
+	position: relative;
+	display: inline-block;
+	outline: 1px solid black;
+}
+.squareNoGrid {
+	outline: 0px;
+}
+
+#board {
+	padding: 0;
+	position: absolute;
+	left: 300px;
+	margin: 5px auto 20px;
+	font-size: 0;
+	margin-bottom: 65px	;
+	width: 650px;
+	height: 650px;
+}
+
+#nav {
+	text-align: center;
+	padding: 15px;
+	position: absolute;
+	outline: 2px solid black;
+	float: left;
+	height: 600px;
+	width: 200px;
+	display: block;
+}
+.sizeBox {
+	width: 75px;
+	height: 20px;
+	font-size: 1em;
+}
+.row-first-cell {
+	clear: both;
+}
+a.toggler {
+    background: green;
+    cursor: pointer;
+    border: 2px solid black;
+    border-right-width: 55px;
+    padding: 0 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+a.toggler.off {
+    background: red;
+    border-right-width: 2px;
+    border-left-width: 55px;
+}
+
+#colorPicker {
+	background-color: lightgray;
+	border: 5px solid black;
+	border-radius: 7px;
+	padding-bottom: 10px;
+}
+

@@ -1,6 +1,7 @@
 <DOCTYPE <!DOCTYPE html>
 <html>
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jscolor/jscolor.js"></script>
@@ -11,8 +12,8 @@
 <body>
 <div id="nav">
 	<form id="sizeForm" method="post" onsubmit="return false;">
-		<input maxlength="3" type="text" id="sizeInput" placeholder="input size (16-125)"/>
-		<button class="btn" id="newSize">Execute</button>
+		<input maxlength="3" type="text" id="sizeInput" placeholder="Grid Size? (16-125)"/>
+		<button class="btn execute" id="newSize">Execute</button>
 	</form id="menu">
 		<p>Show/Hide Grid</p>
 		<a href="#" class="toggler">&nbsp;</a>
@@ -34,11 +35,11 @@
 		<br><br>
 		<button class="btn" type="button" id="random">Random Colors</button>
 	</form>
-
+	</div>
 </div>
-
-<div id="board">
-</div>
-
+	<div id="header">
+		<h1 id="title">Ric's Etch-a-Sketch</h1>
+		<div id="board"></div>
+	</div>
 </body>
 </html>

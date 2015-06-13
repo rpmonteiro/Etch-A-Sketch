@@ -14,7 +14,7 @@ $(document).ready(function(){
 	    }
 	});
 
-	 $('a.toggler').click(function(){
+	 $('#toggler').click(function(){
         $(this).toggleClass('off');
         $(".square").toggleClass('squareNoGrid');
     });

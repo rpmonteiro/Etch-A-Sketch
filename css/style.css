@@ -1,20 +1,32 @@
+body {
+  background-color: black;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  text-align: center;
+}
+
 #title {
 	font-family: 'Lobster', cursive;
 	font-weight: 200;
 	font-size: 5.5em;
   margin: 0 auto;
 }
-#container {
-  width: 900px;
-  text-align: center;
+#pageWrapper {
+  display: flex;
+  width: 100%;
 }
+
 #header {
   text-align: center;
-  margin:0 auto;
-  width: 700px;
-  display: inline-block;
-  overflow: auto;
+  width: 800px;
   position: absolute;
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translateX(-50%);
 }
 
 .square {
@@ -38,14 +50,39 @@
 }
 
 #nav {
-	text-align: center;
 	padding: 15px;
-	outline: 2px solid black;
 	height: 609px;
 	width: 200px;
-	display: inline-block;
   margin-top: 111px;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  zoom: 1;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  padding: 8px;
+  -webkit-box-shadow: 1px 2px 1px #d1d1d1;
+  -moz-box-shadow: 1px 2px 1px #d1d1d1;
+  box-shadow: 1px 2px 1px #d1d1d1;
 }
+
+.drop-shadow {
+  position: relative;
+  width: 90%;
+}
+
+h1 {
+  color:white;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
 .sizeBox {
 	width: 75px;
 	height: 20px;
@@ -71,14 +108,11 @@ a.toggler.off {
     border-left-width: 55px;
 }
 
-#colorPicker {
-	background-color: lightgray;
-	border: 5px solid black;
-	border-radius: 7px;
-	padding-bottom: 10px;
-}
-
 .btn {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #FFF;
 	font-size: 1em;
 	height: 30px;
 	width: 150px;
@@ -125,4 +159,37 @@ a.toggler.off {
 #sizeInput.focus {
   border: solid 1px #707070;
   box-shadow: 0 0 5px 1px #969696;
+}
+
+#colorBox {
+  width: 100px;
+}
+
+#sizeInput {
+  width: 150px;
+}
+
+.smallMenu {
+  border: 3px solid darkgray;
+  padding-top: 15px;
+  background-color: lightgoldenrodyellow;
+}
+
+.smallMenuTwo {
+  border: 1px solid black;
+  background-color: darkgray;
+}
+
+.wrap {
+    background: #FFF;
+    margin: 5px auto;
+    padding:20px;
+    border-radius: 2px 2px 2px 2px; 
+    -webkit-box-shadow: 0 1px 4px 
+    rgba(0, 0, 0, 0.3), 0 0 40px 
+    rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px 
+    rgba(0, 0, 0, 0.3), 0 0 40px 
+    rgba(0, 0, 0, 0.1) inset;
 }

@@ -10,36 +10,43 @@
 	<title>Ric's Etch-A-Sketch</title>
 </head>
 <body>
-<div id="nav">
-	<form id="sizeForm" method="post" onsubmit="return false;">
-		<input maxlength="3" type="text" id="sizeInput" placeholder="Grid Size? (16-125)"/>
-		<button class="btn execute" id="newSize">Execute</button>
-	</form id="menu">
-		<p>Show/Hide Grid</p>
-		<a href="#" class="toggler">&nbsp;</a>
-		<br><br>
-		<button class="btn" type="button" id="default">Default</button>
-	</form/>
 
-	<br><br>
-	
-	<form id="colorPicker">
-		<p>Color Picker</p>
-		<input id ="colorBox" class="color {pickerClosable:true}">
-	</form>
+<div id="pageWrapper">
 
-	<form id="moreOptions">
-		<button class="btn" type="button" id="trail">Trail</button>
+	<div id="nav">
+		<div class="wrap">
+			<form id="sizeForm" method="post" onsubmit="return false;">
+				<input maxlength="3" type="text" id="sizeInput" placeholder="Grid Size? (16-125)"/>
+				<button class="btn execute" id="newSize">Execute</button>
+		</div>
+		</form id="menu">
+			<p>Show/Hide Grid</p>
+			<a href="#" class="toggler">&nbsp;</a>
+			<br><br>
+			<button class="btn" type="button" id="default">Default</button>
+		</form/>
 		<br><br>
-		<button class="btn" type="button" id="gradient">Gradient</button>
-		<br><br>
-		<button class="btn" type="button" id="random">Random Colors</button>
-	</form>
-	</div>
-</div>
+		<div class="wrap">
+			<form id="colorPicker">
+				<p>Color Picker</p>
+				<input id ="colorBox" class="color {pickerClosable:true}">
+			</form>
+		</div>
+		<br>
+		<form id="moreOptions">
+			<button class="btn" type="button" id="trail">Trail</button>
+			<br><br>
+			<button class="btn" type="button" id="gradient">Gradient</button>
+			<br><br>
+			<button class="btn" type="button" id="random">Random Colors</button>
+		</form>
+	</div>	
+
 	<div id="header">
 		<h1 id="title">Ric's Etch-a-Sketch</h1>
 		<div id="board"></div>
 	</div>
+</div>
+
 </body>
 </html>
